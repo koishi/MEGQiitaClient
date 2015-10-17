@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		435C7DEF1BD271BD00B4707E /* MEGLoginWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 435C7DEE1BD271BD00B4707E /* MEGLoginWebViewController.m */; settings = {ASSET_TAGS = (); }; };
+		435C7DF41BD271CC00B4707E /* MEGOAuth2Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 435C7DF11BD271CC00B4707E /* MEGOAuth2Client.m */; settings = {ASSET_TAGS = (); }; };
+		435C7DF51BD271CC00B4707E /* MEGQiitaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 435C7DF31BD271CC00B4707E /* MEGQiitaManager.m */; settings = {ASSET_TAGS = (); }; };
 		439A27FC1BB79D8B00394B8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 439A27FB1BB79D8B00394B8C /* main.m */; };
 		439A27FF1BB79D8B00394B8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 439A27FE1BB79D8B00394B8C /* AppDelegate.m */; };
 		439A28021BB79D8B00394B8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 439A28011BB79D8B00394B8C /* ViewController.m */; };
 		439A28051BB79D8B00394B8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 439A28031BB79D8B00394B8C /* Main.storyboard */; };
 		439A28071BB79D8B00394B8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439A28061BB79D8B00394B8C /* Assets.xcassets */; };
 		439A280A1BB79D8B00394B8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 439A28081BB79D8B00394B8C /* LaunchScreen.storyboard */; };
+		EC2145DE0596BA763D39A53A /* libPods-MEGOAuth2Client.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D48899101FD1600236B39CC4 /* libPods-MEGOAuth2Client.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		435C7DED1BD271BD00B4707E /* MEGLoginWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEGLoginWebViewController.h; path = Core/MEGLoginWebViewController.h; sourceTree = SOURCE_ROOT; };
+		435C7DEE1BD271BD00B4707E /* MEGLoginWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MEGLoginWebViewController.m; path = Core/MEGLoginWebViewController.m; sourceTree = SOURCE_ROOT; };
+		435C7DF01BD271CC00B4707E /* MEGOAuth2Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEGOAuth2Client.h; path = Core/MEGOAuth2Client.h; sourceTree = SOURCE_ROOT; };
+		435C7DF11BD271CC00B4707E /* MEGOAuth2Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MEGOAuth2Client.m; path = Core/MEGOAuth2Client.m; sourceTree = SOURCE_ROOT; };
+		435C7DF21BD271CC00B4707E /* MEGQiitaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEGQiitaManager.h; path = Core/MEGQiitaManager.h; sourceTree = SOURCE_ROOT; };
+		435C7DF31BD271CC00B4707E /* MEGQiitaManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MEGQiitaManager.m; path = Core/MEGQiitaManager.m; sourceTree = SOURCE_ROOT; };
 		439A27F71BB79D8B00394B8C /* MEGOAuth2Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEGOAuth2Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		439A27FB1BB79D8B00394B8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		439A27FD1BB79D8B00394B8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +36,9 @@
 		439A28061BB79D8B00394B8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		439A28091BB79D8B00394B8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		439A280B1BB79D8B00394B8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48899101FD1600236B39CC4 /* libPods-MEGOAuth2Client.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MEGOAuth2Client.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3086E8B54269E3B30A25687 /* Pods-MEGOAuth2Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEGOAuth2Client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MEGOAuth2Client/Pods-MEGOAuth2Client.debug.xcconfig"; sourceTree = "<group>"; };
+		F52CDDD01F3D2D40CBF64836 /* Pods-MEGOAuth2Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEGOAuth2Client.release.xcconfig"; path = "Pods/Target Support Files/Pods-MEGOAuth2Client/Pods-MEGOAuth2Client.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +46,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC2145DE0596BA763D39A53A /* libPods-MEGOAuth2Client.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4381D0C51BB8166C008228CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				439A28031BB79D8B00394B8C /* Main.storyboard */,
+				439A28081BB79D8B00394B8C /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4381D0C61BB8167D008228CB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				439A28001BB79D8B00394B8C /* ViewController.h */,
+				439A28011BB79D8B00394B8C /* ViewController.m */,
+				435C7DED1BD271BD00B4707E /* MEGLoginWebViewController.h */,
+				435C7DEE1BD271BD00B4707E /* MEGLoginWebViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		4381D0C71BB816AB008228CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				435C7DF01BD271CC00B4707E /* MEGOAuth2Client.h */,
+				435C7DF11BD271CC00B4707E /* MEGOAuth2Client.m */,
+				435C7DF21BD271CC00B4707E /* MEGQiitaManager.h */,
+				435C7DF31BD271CC00B4707E /* MEGQiitaManager.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4381D0C81BB816CB008228CB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4381D0C71BB816AB008228CB /* Models */,
+				4381D0C51BB8166C008228CB /* Views */,
+				4381D0C61BB8167D008228CB /* Controllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		439A27EE1BB79D8B00394B8C = {
 			isa = PBXGroup;
 			children = (
 				439A27F91BB79D8B00394B8C /* MEGOAuth2Client */,
 				439A27F81BB79D8B00394B8C /* Products */,
+				D9E9F54E1097A2FFA0F59448 /* Pods */,
+				C018AC7177BC1424E1E67525 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +115,11 @@
 		439A27F91BB79D8B00394B8C /* MEGOAuth2Client */ = {
 			isa = PBXGroup;
 			children = (
+				4381D0C81BB816CB008228CB /* Classes */,
+				439A28061BB79D8B00394B8C /* Assets.xcassets */,
+				439A280B1BB79D8B00394B8C /* Info.plist */,
 				439A27FD1BB79D8B00394B8C /* AppDelegate.h */,
 				439A27FE1BB79D8B00394B8C /* AppDelegate.m */,
-				439A28001BB79D8B00394B8C /* ViewController.h */,
-				439A28011BB79D8B00394B8C /* ViewController.m */,
-				439A28031BB79D8B00394B8C /* Main.storyboard */,
-				439A28061BB79D8B00394B8C /* Assets.xcassets */,
-				439A28081BB79D8B00394B8C /* LaunchScreen.storyboard */,
-				439A280B1BB79D8B00394B8C /* Info.plist */,
 				439A27FA1BB79D8B00394B8C /* Supporting Files */,
 			);
 			path = MEGOAuth2Client;
@@ -79,6 +133,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C018AC7177BC1424E1E67525 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D48899101FD1600236B39CC4 /* libPods-MEGOAuth2Client.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9E9F54E1097A2FFA0F59448 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3086E8B54269E3B30A25687 /* Pods-MEGOAuth2Client.debug.xcconfig */,
+				F52CDDD01F3D2D40CBF64836 /* Pods-MEGOAuth2Client.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 439A280E1BB79D8B00394B8C /* Build configuration list for PBXNativeTarget "MEGOAuth2Client" */;
 			buildPhases = (
+				B1A06937238C62584CA96DF7 /* Check Pods Manifest.lock */,
 				439A27F31BB79D8B00394B8C /* Sources */,
 				439A27F41BB79D8B00394B8C /* Frameworks */,
 				439A27F51BB79D8B00394B8C /* Resources */,
+				D411E588217D008F93990E47 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +183,7 @@
 				TargetAttributes = {
 					439A27F61BB79D8B00394B8C = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 234G69CT2G;
 					};
 				};
 			};
@@ -144,12 +218,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B1A06937238C62584CA96DF7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D411E588217D008F93990E47 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MEGOAuth2Client/Pods-MEGOAuth2Client-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		439A27F31BB79D8B00394B8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435C7DF41BD271CC00B4707E /* MEGOAuth2Client.m in Sources */,
 				439A28021BB79D8B00394B8C /* ViewController.m in Sources */,
+				435C7DF51BD271CC00B4707E /* MEGQiitaManager.m in Sources */,
+				435C7DEF1BD271BD00B4707E /* MEGLoginWebViewController.m in Sources */,
 				439A27FF1BB79D8B00394B8C /* AppDelegate.m in Sources */,
 				439A27FC1BB79D8B00394B8C /* main.m in Sources */,
 			);
@@ -213,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -251,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -261,23 +371,31 @@
 		};
 		439A280F1BB79D8B00394B8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3086E8B54269E3B30A25687 /* Pods-MEGOAuth2Client.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MEGOAuth2Client/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.jugem.meg.MEGOAuth2Client;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		439A28101BB79D8B00394B8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F52CDDD01F3D2D40CBF64836 /* Pods-MEGOAuth2Client.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MEGOAuth2Client/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.jugem.meg.MEGOAuth2Client;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -300,6 +418,7 @@
 				439A28101BB79D8B00394B8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
