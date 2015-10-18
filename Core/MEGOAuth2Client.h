@@ -2,7 +2,7 @@
 //  MEGOAuth2Client.h
 //  MEGOAuth2Client
 //
-//  Created by bs on 2015/09/27.
+//  Created by Koichiro Oishi on 2015/09/27.
 //  Copyright © 2015年 bs. All rights reserved.
 //
 

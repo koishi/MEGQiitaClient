@@ -2,7 +2,7 @@
 //  MEGQiitaManager.m
 //  MEGOAuth2Client
 //
-//  Created by bs on 2015/10/10.
+//  Created by Koichiro Oishi on 2015/10/10.
 //  Copyright © 2015年 bs. All rights reserved.
 //
 

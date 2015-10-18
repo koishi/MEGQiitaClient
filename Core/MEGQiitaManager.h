@@ -2,7 +2,7 @@
 //  MEGQiitaManager.h
 //  MEGOAuth2Client
 //
-//  Created by bs on 2015/10/10.
+//  Created by Koichiro Oishi on 2015/10/10.
 //  Copyright © 2015年 bs. All rights reserved.
 //
 
@@ -22,6 +22,9 @@ static NSString * const kOauth2ClientScope = @"read_qiita";
 
 @interface MEGQiitaManager : NSObject
 
+// アクセストークン
+@property (strong, nonatomic) NSString *token;
+
 // シングルトンのインスタンス取得
 + (MEGQiitaManager *)sharedInstance;
 
@@ -34,7 +37,5 @@ static NSString * const kOauth2ClientScope = @"read_qiita";
 
 // ログアウト
 - (void)logout;
-
-@property (strong, nonatomic) NSString *token;
 
 @end
