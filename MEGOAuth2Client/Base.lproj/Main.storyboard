@@ -17,21 +17,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUg-qC-6bu">
-                                <rect key="frame" x="139" y="107" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUg-qC-6bu">
+                                <rect key="frame" x="139" y="49" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BxR-4K-Rj4">
-                                <rect key="frame" x="117" y="372" width="87" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BxR-4K-Rj4">
+                                <rect key="frame" x="145" y="102" width="30" height="30"/>
                                 <state key="normal" title="認証"/>
                                 <connections>
                                     <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ks6-Oy-45H"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92r-qy-Ldy">
+                                <rect key="frame" x="137" y="172" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="3Rn-2x-V9c"/>
+                                </constraints>
+                                <state key="normal" title="User"/>
+                                <connections>
+                                    <action selector="tappedUserButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ddk-ZD-cGw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZUg-qC-6bu" firstAttribute="centerX" secondItem="92r-qy-Ldy" secondAttribute="centerX" id="2Aq-a1-XgL"/>
+                            <constraint firstItem="BxR-4K-Rj4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6nr-oh-SRV"/>
+                            <constraint firstItem="92r-qy-Ldy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BjJ-OL-NdM"/>
+                            <constraint firstItem="BxR-4K-Rj4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CWw-Ei-lrH"/>
+                            <constraint firstItem="92r-qy-Ldy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SYs-kQ-6fc"/>
+                            <constraint firstItem="ZUg-qC-6bu" firstAttribute="centerX" secondItem="BxR-4K-Rj4" secondAttribute="centerX" constant="-1" id="UBs-VW-g5v"/>
+                            <constraint firstItem="92r-qy-Ldy" firstAttribute="top" secondItem="BxR-4K-Rj4" secondAttribute="bottom" constant="40" id="UwV-6P-Xsk"/>
+                            <constraint firstItem="ZUg-qC-6bu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="ZxL-RH-W8m"/>
+                            <constraint firstItem="ZUg-qC-6bu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oiC-at-dP7"/>
+                            <constraint firstItem="BxR-4K-Rj4" firstAttribute="top" secondItem="ZUg-qC-6bu" secondAttribute="bottom" constant="32" id="yiX-dB-oiX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2Aq-a1-XgL"/>
+                                <exclude reference="UBs-VW-g5v"/>
+                                <exclude reference="6nr-oh-SRV"/>
+                                <exclude reference="SYs-kQ-6fc"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>

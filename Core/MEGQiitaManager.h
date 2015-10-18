@@ -20,6 +20,8 @@ static NSString * const kOauth2ClientTokenUrl = @"/api/v2/access_tokens";
 //scope url
 static NSString * const kOauth2ClientScope = @"read_qiita";
 
+static NSString * const kAuthenticatedUser = @"/api/v2/authenticated_user";
+
 @interface MEGQiitaManager : NSObject
 
 // アクセストークン
@@ -37,5 +39,7 @@ static NSString * const kOauth2ClientScope = @"read_qiita";
 
 // ログアウト
 - (void)logout;
+
+- (void)authenticatedUser;
 
 @end

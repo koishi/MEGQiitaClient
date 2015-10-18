@@ -10,16 +10,13 @@
 #import "MEGOAuth2Client.h"
 #import "MEGQiitaManager.h"
 #import "MEGLoginWebViewController.h"
-
-static NSString * const kQiitaClientId = @"";
-//Client Secret
-static NSString * const kQiitaClientSecret = @"";
+#import "QiitaCredentials.h"
 
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
 - (IBAction)tappedButton:(id)sender;
-
+- (IBAction)tappedUserButton:(id)sender;
 @end
 
 @implementation ViewController
@@ -55,7 +52,7 @@ static NSString * const kQiitaClientSecret = @"";
 - (IBAction)tappedButton:(id)sender
 {
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showQiitaOAuthLoginView:) name:kMEGAOauthLoginStartNotification object:nil];
-  [[MEGQiitaManager sharedInstance] setConsumerKey:kQiitaClientId consumerSecret:kQiitaClientSecret];
+  [[MEGQiitaManager sharedInstance] setConsumerKey:QIITA_CONSUMER_KEY consumerSecret:QIITA_CONSUMER_SECRETKEY];
   [[MEGQiitaManager sharedInstance] logout];
   [[MEGQiitaManager sharedInstance] authorizeWithSuccess:^{
     NSLog(@"成功したぽいです");
@@ -77,6 +74,13 @@ static NSString * const kQiitaClientSecret = @"";
   UINavigationController *navigationController = [[UINavigationController alloc] init];
   navigationController.viewControllers = @[viewController];
   [self presentViewController:navigationController animated:YES completion:nil];
+}
+
+#pragma mark -
+
+- (IBAction)tappedUserButton:(id)sender
+{
+  [[MEGQiitaManager sharedInstance] authenticatedUser];
 }
 
 @end

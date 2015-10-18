@@ -2,7 +2,8 @@
 # platform :ios, '7.0'
 
 target 'MEGOAuth2Client' do
-  pod 'AFNetworking'
+  pod 'AFNetworking', '~> 2.0'
+  pod 'AFNetworking-Synchronous/2.x'
   pod 'UICKeyChainStore'
 end
 

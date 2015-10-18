@@ -10,6 +10,8 @@
 		435C7DEF1BD271BD00B4707E /* MEGLoginWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 435C7DEE1BD271BD00B4707E /* MEGLoginWebViewController.m */; settings = {ASSET_TAGS = (); }; };
 		435C7DF41BD271CC00B4707E /* MEGOAuth2Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 435C7DF11BD271CC00B4707E /* MEGOAuth2Client.m */; settings = {ASSET_TAGS = (); }; };
 		435C7DF51BD271CC00B4707E /* MEGQiitaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 435C7DF31BD271CC00B4707E /* MEGQiitaManager.m */; settings = {ASSET_TAGS = (); }; };
+		4371BD881BD35431001D326C /* AuthenticatedUserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4371BD851BD35431001D326C /* AuthenticatedUserEntity.m */; settings = {ASSET_TAGS = (); }; };
+		4371BD891BD35431001D326C /* BaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 4371BD871BD35431001D326C /* BaseEntity.m */; settings = {ASSET_TAGS = (); }; };
 		439A27FC1BB79D8B00394B8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 439A27FB1BB79D8B00394B8C /* main.m */; };
 		439A27FF1BB79D8B00394B8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 439A27FE1BB79D8B00394B8C /* AppDelegate.m */; };
 		439A28021BB79D8B00394B8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 439A28011BB79D8B00394B8C /* ViewController.m */; };
@@ -26,6 +28,11 @@
 		435C7DF11BD271CC00B4707E /* MEGOAuth2Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MEGOAuth2Client.m; path = Core/MEGOAuth2Client.m; sourceTree = SOURCE_ROOT; };
 		435C7DF21BD271CC00B4707E /* MEGQiitaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MEGQiitaManager.h; path = Core/MEGQiitaManager.h; sourceTree = SOURCE_ROOT; };
 		435C7DF31BD271CC00B4707E /* MEGQiitaManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MEGQiitaManager.m; path = Core/MEGQiitaManager.m; sourceTree = SOURCE_ROOT; };
+		4371BD841BD35431001D326C /* AuthenticatedUserEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AuthenticatedUserEntity.h; path = Core/Entity/AuthenticatedUserEntity.h; sourceTree = SOURCE_ROOT; };
+		4371BD851BD35431001D326C /* AuthenticatedUserEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuthenticatedUserEntity.m; path = Core/Entity/AuthenticatedUserEntity.m; sourceTree = SOURCE_ROOT; };
+		4371BD861BD35431001D326C /* BaseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseEntity.h; path = Core/Entity/BaseEntity.h; sourceTree = SOURCE_ROOT; };
+		4371BD871BD35431001D326C /* BaseEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseEntity.m; path = Core/Entity/BaseEntity.m; sourceTree = SOURCE_ROOT; };
+		4371BD8B1BD3AB7D001D326C /* QiitaCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiitaCredentials.h; sourceTree = "<group>"; };
 		439A27F71BB79D8B00394B8C /* MEGOAuth2Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEGOAuth2Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		439A27FB1BB79D8B00394B8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		439A27FD1BB79D8B00394B8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +60,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4371BD831BD3541A001D326C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4371BD861BD35431001D326C /* BaseEntity.h */,
+				4371BD871BD35431001D326C /* BaseEntity.m */,
+				4371BD841BD35431001D326C /* AuthenticatedUserEntity.h */,
+				4371BD851BD35431001D326C /* AuthenticatedUserEntity.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
 		4381D0C51BB8166C008228CB /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +94,7 @@
 		4381D0C71BB816AB008228CB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4371BD831BD3541A001D326C /* Entity */,
 				435C7DF01BD271CC00B4707E /* MEGOAuth2Client.h */,
 				435C7DF11BD271CC00B4707E /* MEGOAuth2Client.m */,
 				435C7DF21BD271CC00B4707E /* MEGQiitaManager.h */,
@@ -120,6 +139,7 @@
 				439A280B1BB79D8B00394B8C /* Info.plist */,
 				439A27FD1BB79D8B00394B8C /* AppDelegate.h */,
 				439A27FE1BB79D8B00394B8C /* AppDelegate.m */,
+				4371BD8B1BD3AB7D001D326C /* QiitaCredentials.h */,
 				439A27FA1BB79D8B00394B8C /* Supporting Files */,
 			);
 			path = MEGOAuth2Client;
@@ -259,9 +279,11 @@
 				435C7DF41BD271CC00B4707E /* MEGOAuth2Client.m in Sources */,
 				439A28021BB79D8B00394B8C /* ViewController.m in Sources */,
 				435C7DF51BD271CC00B4707E /* MEGQiitaManager.m in Sources */,
+				4371BD881BD35431001D326C /* AuthenticatedUserEntity.m in Sources */,
 				435C7DEF1BD271BD00B4707E /* MEGLoginWebViewController.m in Sources */,
 				439A27FF1BB79D8B00394B8C /* AppDelegate.m in Sources */,
 				439A27FC1BB79D8B00394B8C /* main.m in Sources */,
+				4371BD891BD35431001D326C /* BaseEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

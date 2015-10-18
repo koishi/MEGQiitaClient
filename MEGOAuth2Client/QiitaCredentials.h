@@ -1,0 +1,2 @@
+#define QIITA_CONSUMER_KEY @""
+#define QIITA_CONSUMER_SECRETKEY @""

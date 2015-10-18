@@ -9,11 +9,17 @@
 #import "MEGQiitaManager.h"
 #import "MEGOAuth2Client.h"
 
+#import "AuthenticatedUserEntity.h"
+
+#import "AFNetworking.h"
+#import "AFHTTPRequestOperationManager+Synchronous.h"
+
 @implementation MEGQiitaManager
 {
   NSString *_consumerKey;
   NSString *_consumerSecret;
   id _applicationLaunchNotificationObserver;
+  AuthenticatedUserEntity *_user;
 }
 
 + (MEGQiitaManager *)sharedInstance
@@ -31,15 +37,6 @@
   _consumerKey = consumerKey;
   _consumerSecret = consumerSecret;
   [[MEGOAuth2Client sharedInstance] setConsumerKey:_consumerKey consumerSecret:_consumerSecret];
-
-//  self.apiClient = [[HTBHatenaBookmarkAPIClient alloc] initWithKey:consumerKey secret:consumerSecret];
-//  _authorized = NO;
-//  
-//  // Resume token
-//  if (self.userManager.token) {
-//    _authorized = YES;
-//    self.apiClient.accessToken = self.userManager.token;
-//  }
 }
 
 - (void)authorizeWithSuccess:(void (^)(void))success
@@ -52,6 +49,7 @@
       [[NSNotificationCenter defaultCenter] removeObserver:_applicationLaunchNotificationObserver];
       _applicationLaunchNotificationObserver = nil;
       self.token = token;
+      [self authenticatedUser];
       success();
     } failure:^(NSError *error) {
       failure(error);
@@ -79,6 +77,27 @@
 - (void)logout
 {
   self.token = nil;
+}
+
+#pragma mark - AuthenticatedUser
+
+- (void)authenticatedUser
+{
+  NSString *url = [NSString stringWithFormat:@"%@%@",kOauth2ClientBaseUrl,kAuthenticatedUser];
+  NSError *error = nil;
+  NSDictionary *data = [[self tokenManager] syncGET:url
+                                         parameters:nil
+                                          operation:nil
+                                              error:&error];
+  _user = [[AuthenticatedUserEntity alloc] initWithDictionary:data];
+}
+
+- (AFHTTPRequestOperationManager*)tokenManager
+{
+  AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+  NSString *authHeader = [NSString stringWithFormat:@"Bearer %@",self.token];
+  [manager.requestSerializer setValue:authHeader forHTTPHeaderField:@"Authorization"];
+  return manager;
 }
 
 @end
