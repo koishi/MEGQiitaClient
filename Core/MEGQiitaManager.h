@@ -26,6 +26,7 @@ static NSString * const kAuthenticatedUser = @"/api/v2/authenticated_user";
 
 // アクセストークン
 @property (strong, nonatomic) NSString *token;
+@property (nonatomic, readonly, copy) NSString *userId;
 
 // シングルトンのインスタンス取得
 + (MEGQiitaManager *)sharedInstance;
@@ -40,6 +41,7 @@ static NSString * const kAuthenticatedUser = @"/api/v2/authenticated_user";
 // ログアウト
 - (void)logout;
 
+// 認証済みユーザ情報取得
 - (void)authenticatedUser;
 
 @end

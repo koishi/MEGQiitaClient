@@ -100,4 +100,9 @@
   return manager;
 }
 
+- (NSString *)userId
+{
+  return _user.id;
+}
+
 @end
