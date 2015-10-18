@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.source_files  = 'Core'
   s.requires_arc = true
   s.platform = :ios, '7.0'
-  s.dependency 'AFNetworking'
+  s.dependency 'AFNetworking', '~> 2.0'
+  s.dependency 'AFNetworking-Synchronous/2.x'
   s.dependency 'UICKeyChainStore'
 end
