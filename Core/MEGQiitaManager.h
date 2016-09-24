@@ -18,7 +18,7 @@ static NSString * const kOauth2ClientAuthUrl = @"/api/v2/oauth/authorize";
 //token url
 static NSString * const kOauth2ClientTokenUrl = @"/api/v2/access_tokens";
 //scope url
-static NSString * const kOauth2ClientScope = @"read_qiita";
+static NSString * const kOauth2ClientScope = @"read_qiita+write_qiita";
 
 static NSString * const kAuthenticatedUser = @"/api/v2/authenticated_user";
 
